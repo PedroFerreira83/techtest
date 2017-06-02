@@ -1,14 +1,9 @@
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package pf.techtest.question1;
 import java.util.Arrays;
 /**
  *
- * @author PF
+ * @author Pedro Ferreira
  */
 public class TechTest1 {
 
@@ -16,7 +11,7 @@ public class TechTest1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+        //test method with 5 different Anagrams validation and print result
         System.out.println(checkAnagrams("Punishment", "Nine Thumps"));
         System.out.println(checkAnagrams("The Morse code", "Here come dots"));
         System.out.println(checkAnagrams("Snooze alarms", "Alas! No more Zs"));
@@ -28,7 +23,7 @@ public class TechTest1 {
     /**
      * Given two strings, check if they’re anagrams or not
      * <p>
-     * This method always checks if two strings are anagrams and return the result
+     * This method checks if two strings are anagrams and return the result
      * @param string1 the first string to check
      * @param string2 the second string to check
      * @return the result of anagram validation

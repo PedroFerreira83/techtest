@@ -1,13 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package pf.techtest.question2;
 
 /**
  *
- * @author 10050102
+ * @author Pedro Ferreira
  */
 public class TechTest2 {
 
@@ -16,16 +12,20 @@ public class TechTest2 {
      */
     public static void main(String[] args) {
         System.out.println(fixSpelling("hostleworld"));
-        // TODO code application logic here
+      
     }
 
     public static String fixSpelling(String name) {
         String wordToCheck = new String(name);
+        /* in order to compare strings we should use the method equals 
+        instead of "==" comparator used for objects or simple types.*/
         if (wordToCheck.equals("hostleworld")) {
             name = "hostelworld";
-        } else {
+        } /* the else bellow makes an infinit loop in cases that name string is
+        not equal to "hostleworld"
+        else {
             fixSpelling(name);
-        }
+        }*/
         return name;
     }
 }
