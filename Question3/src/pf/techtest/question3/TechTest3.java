@@ -30,12 +30,12 @@ public class TechTest3 {
     }
 
     /**
-     * Given url and resolution performs a search and check if results are
+     * Given URL and resolution performs a search and check if results are
      * correctly sorted
      * <p>
      * This method navigate the gets the text of each WebElement to a string
      * list and check if its correctly sorted
-     * @param url contains the url to navigate
+     * @param url contains the URL to navigate
      * @param dimension contains screen dimension and it is option. If it is not set means Full Screen.
      * @return the result of sorting validation
      */
@@ -59,7 +59,7 @@ public class TechTest3 {
         String searchString="Dublin, Ireland";
         searchBox.sendKeys(searchString);
 
-        //wait until predictive search is displayed
+        //wait until predictive search result is displayed
         (new WebDriverWait(driver, 5)).until((ExpectedCondition<Boolean>) (WebDriver d) -> {
             WebElement searchResult = d.findElement(By.linkText(searchString));
             return searchResult.getText().equals(searchString);

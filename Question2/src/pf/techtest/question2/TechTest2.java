@@ -18,12 +18,12 @@ public class TechTest2 {
     public static String fixSpelling(String name) {
         String wordToCheck = new String(name);
         /* in order to compare strings we should use the method equals 
-        instead of "==" comparator used for objects or simple types.*/
+        instead of "==" comparator that is used for objects or simple types.*/
         if (wordToCheck.equals("hostleworld")) {
             name = "hostelworld";
         } /* the else bellow makes an infinit loop in cases that name string is
-        not equal to "hostleworld"
-        else {
+        not equal to "hostleworld" */
+        /* else {
             fixSpelling(name);
         }*/
         return name;
